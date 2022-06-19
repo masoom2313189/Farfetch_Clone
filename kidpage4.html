@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 1</title>
+    <style>
+        #superman{
+            display: grid;
+            grid-template-columns: repeat(4,320px);
+            grid-template-rows: repeat(4,500px);
+            gap: 20px;
+            justify-content: center;
+           
+           
+        }
+        #superman>div{
+            border: 1px solid white;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            border-radius: 20px;
+        }
+        #superman>div:hover{
+            box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+           background-color: rgb(88, 190, 190);
+           color: white;
+        }
+      
+        img{
+            width: 100%;
+            height: 74%;
+            border-radius: 20px;
+        }
+      
+        #thor{
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+       #hulk{
+        margin-left: 10px;
+       }
+       #cap{
+        margin-left: 10px;
+       }
+       h1{
+        font-size: 40px;
+        text-align: center;
+       }
+         /* bottom Start */
+         /* *
+        {
+            margin: 0;
+            padding: 0;
+        } */
+        #bottom-2{
+            width: 95%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 70px;
+        }
+
+        #bottom-2>a>div>p:last-child{
+            margin-top: 10px;
+        }
+        #bottom-2>a>div{
+            border: 1px solid rgba(128, 128, 128, 0.065);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #bottom-2>a{
+            text-decoration: none;
+            color: black;
+            font-family: Helvetica, sans-serif;
+        }
+        #bottom-2>a:hover{
+            background-color: rgba(128, 128, 128, 0.065);
+        }
+        #bottom-2>a:first-child>div>img{
+            width: 30px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        #bottom-2>a:nth-child(2)>div>img{
+            width: 30px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        #bottom-2>a:nth-child(3)>div>img{
+            width: 50px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        #bottom-1>h1{
+            margin: auto;
+            width: 55%;
+            font-family:Helvetica, sans-serif;
+            margin-top: 100px;
+            letter-spacing: 0.05em;
+        }
+        #bottom-1>p{
+            margin: auto;
+            width: 55%;
+            font-family: Helvetica, sans-serif;
+            margin-top: 15px;
+        }
+        #bottom-1>div>p,a{
+            color: black;
+        }
+
+        #bottom-1>div>p,a:hover{
+            color: gray;
+        }
+        #bottom-1-last{
+            display: flex;
+            width: 55%;
+            margin: auto;
+            margin-top: 25px;
+        }
+        #bottom-1-last>div>img{
+            width: 120px;
+        }
+        #bottom-1-last>div:first-child{
+            width: 60%;
+            font-family: Helvetica, sans-serif;
+            margin-right: 50px;
+            border-right: 1px solid rgba(128, 128, 128, 0.234);
+        }
+        #bottom-1-last>div:first-child>p{
+            width: 90%;
+            margin-top: 20px;
+        }
+        #bottom-1-last>div:first-child>p+p
+        {
+            margin-bottom: 20px;
+        }
+        #bottom-1-last>div:last-child>p{
+            margin-bottom: 20px;
+        }
+        #bottom-1-last>div>input{
+            padding: 15px 100px 15px 15px;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        #bottom-1-last>div>button{
+            padding: 13px 17px;
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+        #bottom-1-last>div>button:hover{
+            cursor: pointer;
+            background-color: gray;
+           border-color: gray;
+        }
+        footer{
+            background-color:rgba(0, 0, 0, 0.857);
+            color: white;
+            margin-top: 70px;
+            padding: 10px 50px;
+        }
+        #footer{
+            display: flex;
+        }
+        #footer a{
+            color: white;
+            font-family: Helvetica, sans-serif;
+            text-decoration: none;
+        }
+        #footer p{
+            font-family: Helvetica, sans-serif;
+        }
+        #footer>div:first-child{
+            width: 32%;
+        }
+        #footer>div:nth-child(2){
+            width: 34%;
+            margin-left: 20px;
+        }
+        #footer>div:nth-child(3){
+            width: 16%;
+            margin-left: 20px;
+        }
+        #indialogo{
+            width: 16px;
+        }
+        #followUs{
+            margin-top: 50px;
+        }
+        #footer>div>div>a img{
+            width: 25px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+    
+        .lastp{
+            margin-top: -10px;
+        }
+        ul li{
+            list-style: none;
+           margin-top: 12px;
+           font-family: Arial, Helvetica, sans-serif;
+        }
+       .customer{
+            font-size: 16px;
+        }
+        .about{
+            font-size: 16px;
+        }
+        #app{
+            margin-top: 30px;
+        }
+        #usd{
+            margin-top: 15px;
+            margin-bottom: 50px;
+        }
+        #follow{
+            margin-bottom: 30px;
+        }
+        footer>p{
+            margin-bottom: 15px;
+        }
+        /* bottom End */
+    </style>
+</head>
+<body>
+
+   <h1>Kidswear From Modes FF</h1>
+    <div id=superman>
+<div>
+    <img src="https://cdn-images.farfetch-contents.com/17/81/17/18/17811718_37402870_480.jpg" alt="error">
+   <p id="thor">Kenzo Kids
+
+    </p>
+   <p id="hulk">     logo-print T-shirt</p>
+<p id="cap">  $76  -30%  $53</p>
+
+</div>
+<div>
+<img src="https://cdn-images.farfetch-contents.com/17/84/08/21/17840821_37532084_480.jpg" alt="">
+<p id="thor">VEJA Kids
+
+    </p>
+<p id="hulk">  touch-strap low-top trainers</p>
+<p id="cap"> $143  -30%  $100</p>
+
+</div>
+<div>
+    <img src="https://cdn-images.farfetch-contents.com/17/87/65/41/17876541_38980292_480.jpg" alt="">
+    <p id="thor">Karl Lagerfeld Kids
+
+        </p>
+    <p id="hulk">
+        Smiley-print short-sleeve T-shirt</p>
+    <p id="cap">  $70</p>
+
+
+</div>
+<div>
+
+    <img src="https://cdn-images.farfetch-contents.com/17/64/47/97/17644797_37151750_480.jpg" alt="">
+    <p id="thor">Kenzo Kids
+
+       </p>
+    <p id="hulk">  logo-print swim shorts</p>
+    <p id="cap">          $115 -40%  $69</p>
+
+</div>
+<div>
+    <img src="https://cdn-images.farfetch-contents.com/17/59/39/62/17593962_38441863_480.jpg" alt="">
+    <p id="thor">Off-White Kids
+
+        </p>
+    <p id="hulk">    Vulcanized touch-strap sneakers</p>
+    <p id="cap">   $370  -40%  $222</p>
+
+
+</div>
+<div>
+
+    <img src="https://cdn-images.farfetch-contents.com/18/15/31/09/18153109_38503639_480.jpg" alt="">
+    <p id="thor">Kenzo Kids
+
+        </p>
+    <p id="hulk"> logo-print jelly shoes</p>
+    <p id="cap">      $122 -40%  $73</p>
+
+
+</div>
+<div>
+
+    <img src="https://cdn-images.farfetch-contents.com/17/64/48/95/17644895_37225872_480.jpg" alt="">
+    <p id="thor">Kenzo Kids
+
+        </p>
+    <p id="hulk"> 
+        logo-print crewneck T-shirt</p>
+    <p id="cap"> $84  -30%  $59</p>
+
+
+</div>
+<div>
+    <img src="https://cdn-images.farfetch-contents.com/17/95/11/67/17951167_37826081_480.jpg" alt="">
+    <p id="thor">
+        Kenzo Kids
+    </p>
+    <p id="hulk">  
+        Tiger Head-motif organic-cotton dress </p>
+    <p id="cap">
+        $150 -40% $90
+
+    </p>
+
+
+
+</div>
+<div>
+
+    <img src="https://cdn-images.farfetch-contents.com/17/64/98/00/17649800_39927660_480.jpg" alt="">
+    <p id="thor">Ralph Lauren Kids
+ </p>
+    <p id="hulk">     Polo Bear-print cotton T-shirt</p>
+    <p id="cap">   $86 -30% $60</p>
+
+
+
+</div>
+<div>
+<img src="https://cdn-images.farfetch-contents.com/17/93/41/76/17934176_37798976_480.jpg" alt="">
+<p id="thor">
+    Kenzo Kids
+  
+    </p>
+<p id="hulk">  signature elephant logo-print T-shirt</p>
+<p id="cap">  
+    $114  -30%  $80</p>
+
+
+
+
+</div>
+<div>
+    <img src="https://cdn-images.farfetch-contents.com/17/73/21/78/17732178_37140959_480.jpg" alt="">
+    <p id="thor">Dsquared2 Kids
+
+     </p>
+    <p id="hulk">logo-print T-shirt</p>
+    <p id="cap">       $166  -30%  $116</p>
+
+
+
+</div>
+<div>
+    <img src="https://cdn-images.farfetch-contents.com/17/29/11/77/17291177_39789087_480.jpg" alt="">
+    <p id="thor">Off-White Kids
+
+        </p>
+    <p id="hulk">      logo-print short-sleeved T-shirt</p>
+    <p id="cap">    $258  -40%  $155</p>
+
+
+
+</div>
+<div>
+    <img src="https://cdn-images.farfetch-contents.com/17/86/41/75/17864175_37652378_480.jpg" alt="">
+    <p id="thor">Ralph Lauren Kids
+
+       </p>
+    <p id="hulk">    logo embroidered round neck T-shirt</p>
+    <p id="cap"> $83</p>
+
+
+</div>
+<div>
+    <img src="https://cdn-images.farfetch-contents.com/17/01/85/70/17018570_34161056_480.jpg" alt="">
+    <p id="thor">Kenzo Kids
+
+      </p>
+    <p id="hulk">   Tiger-embroidered cotton T-shirt</p>
+    <p id="cap">   $90 -30%  $63</p>
+
+
+
+</div>
+<div>
+    <img src="https://cdn-images.farfetch-contents.com/17/64/37/07/17643707_37218668_480.jpg" alt="">
+
+    <p id="thor">Karl Lagerfeld Kids
+
+        </p>
+    <p id="hulk">logo-print track shorts </p>
+    <p id="cap">     $120 -30%  $84</p>
+
+
+</div>
+<div>
+
+    <img src="https://cdn-images.farfetch-contents.com/17/81/31/48/17813148_37403111_480.jpg" alt="">
+    <p id="thor">Kenzo Kids
+
+      </p>
+    <p id="hulk">  organic cotton logo-print T-shirt</p>
+    <p id="cap">     $84 -30% $59</p>
+
+
+</div>
+
+    </div>
+ <!-- Bottom Page Layout -->
+ <div id="bottom-2">
+    <a href="https://www.farfetch.com/in/how-to-shop">
+        <div>
+           <img src="https://images.squarespace-cdn.com/content/v1/554b0a2ee4b05766734dc598/1502849486368-70C5T04PNH3DEBANRPRH/image-asset.png?format=1500w" alt="Error">
+            <p>HOW TO SHOP</p>
+            <p>Your guide to shopping and placing orders</p>
+        </div>
+    </a>
+    <a href="https://www.farfetch.com/in/faqs">
+        <div>
+           <img src="https://www.boynton-beach.org/sites/default/files/images/Landing%20Pages/Development/question%20363%20x%20333.jpg" alt="Error">
+            <p>FAQS</p>
+            <p>Your questions answered</p>
+        </div>
+    </a>
+    <a href="https://www.farfetch.com/in/contact-us">
+        <div>
+            <img src="https://www.ikea.com/images/speech-bubble-pictogram-b97862c1ffb21064f85f1d91daed7f67.jpg?f=s" alt="Error">
+            <p>NEED HELP?</p>
+            <p>Contact our global Customer Service team</p>
+        </div>
+    </a>
+</div>
+<div id="bottom-1">
+    <h1>DOWNLOAD THE FARFETCH APP</h1>
+    <p>Enjoy exclusive content on our app, including personalized product edits as well as our Visual Search tool for iOS. <a target="_blank" href="https://www.farfetch.com/in/discover-app">More about the app</a></p>
+</div>
+<div id="bottom-1-last">
+    <div>
+        <p>EMAIL ME</p>
+        <p>Enter your email and we'll send you a link to download the free app</p>
+        <input type="text" placeholder="Email address">
+        <button>Send</button>
+    </div>
+    <div>
+        <p>SCAN QR CODE</p>
+        <img src="https://media.blackandwhite-ff.com/10000/2a0d5342-2544-4898-b2d4-8272235868d6_qr.png" alt="Error">
+    </div>
+</div>
+<footer>
+    <div id="footer">
+    <div>
+        <span>FARFETCH APP</span> </br>
+        <p id="app"><a target="_blank" href="https://www.farfetch.com/in/discover-app">Farfetch App for iOS and Android</a></p>
+    </div>
+    <div>
+        <span id="region">DESTINATION/REGION, CURRENCY AND LANGUAGE</span></br>
+        <p id="usd"> <img id="indialogo" src="https://transparency.twitter.com/content/dam/transparency-twitter/flags/in.svg" alt="Error"> India, USD $</p>
+        <p id="follow">FOLLOW US</p>
+        <div>
+            <a target="_blank" href="https://instagram.com/farfetch"><img src="https://www.designbust.com/download/171/png/instagram_logo_color_icon512.png" alt="Error"></a>
+           <a target="_blank" href="https://www.facebook.com/farfetch"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-facebook_-512.png" alt="Error"></a>
+           <a target="_blank" href="https://twitter.com/farfetch"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" alt="Error"></a>
+           <a target="_blank" href="https://www.snapchat.com/add/farfetch.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGaDjfwg4V8qmJcf7_ep1MEvzcYkZtVZL3_Q&usqp=CAU" alt="Error"></a>
+           <a target="_blank" href="https://www.pinterest.com/farfetch"> <img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Error"></a>
+          <a target="_blank" href="https://www.youtube.com/user/farfetchdotcom"><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_youtube-512.png" alt="Error"></a>
+           
+        </div>
+    </div>
+    <div>
+        <span class="customer">CUSTOMER SERVICE</span>
+        <ul>
+        <li><a href="https://www.farfetch.com/in/contact-us">Contact us</a></li>
+        <li><a href="https://www.farfetch.com/in/orders-and-shipping">Orders & delivery</a></li>
+        <li><a href="https://www.farfetch.com/in/payment-and-pricing">Payment & pricing</a></li>
+        <li><a href="https://www.farfetch.com/in/returns-and-refunds">Returns & refunds</a></li>
+        <li><a href="https://www.farfetch.com/in/faqs">FAQs</a></li>
+        <li><a href="https://www.farfetch.com/in/terms-and-conditions">Terms & conditions</a></li>
+        <li><a href="https://www.farfetch.com/in/promotion-terms-and-conditions">Promotion terms & conditions</a></li>
+        <li><a href="https://www.farfetch.com/in/privacy-policy">Privacy policy</a></li>
+        <li><a href="https://www.farfetch.com/in/farfetch-accessibility">Accessibility</a></li>
+    </ul>
+    </div>
+    <div>
+       <span id="about">ABOUT FARFETCH</span>
+        <ul>
+        <li><a href="https://aboutfarfetch.com/?_ga=2.217002710.1970144146.1655128298-2129034113.1655128298&_gac=1.86433130.1655130251.Cj0KCQjwwJuVBhCAARIsAOPwGASgBnrLa2sTn9nEzRxAjcnMkAfx6RhgDdBxAxhdQ6g3gaqLb5q0N-AaAp_HEALw_wcB&_gl=1*1mbzeqd*_ga*MjEyOTAzNDExMy4xNjU1MTI4Mjk4*_ga_CEF7PMN9HX*MTY1NTE4MjA0NS40LjEuMTY1NTE5MDM5OS41NQ..">About Us</a></li>
+        <li><a href="https://www.farfetchinvestors.com/">Investors</a></li>
+        <li><a href="https://www.farfetch.com/in/boutiques-all.aspx">Boutique Partners</a></li>
+        <li><a href="https://www.farfetch.com/in/pag1987.aspx">Affiliate Programme</a></li>
+        <li><a href="https://www.farfetch.com/in/student-discount/unidays">Student discount UNiDAYS</a></li>
+        <li><a href="https://www.farfetch.com/in/youth-discount">Youth discount</a></li>
+        <li><a href="https://farfetchgroupcareers.com/farfetch"></a>Careers</li>
+        <li><a href="https://www.farfetch.com/in/customer-promise">Customer Promise</a></li>
+        <li><a href="https://www.farfetch.com/in/discover-app">FARFETCH App</a></li>
+        <li><a href="https://www.farfetch.com/in/sitemap">Sitemap</a></li>
+        <li><a href="https://www.farfetch.com/in/stories/positively-farfetch.aspx">Positively FARFETCH</a></li>
+    </ul>
+</div>
+</div>
+<p>'FARFETCH' and the 'FARFETCH' logo are trade marks of FARFETCH UK Limited and are registered in numerous jurisdictions around the world.</p>
+<p class="lastp">© Copyright 2022 FARFETCH UK Limited. All rights reserved.</p>
+</footer>
+    
+</body>
+</html>
