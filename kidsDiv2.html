@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div 2</title>
+
+    <style>
+        #Top1
+        {
+          width: 100% ;
+          height: 400px;
+          grid-template-rows: repeat(1, );
+          grid-template-columns: repeat(3, 1fr);
+          display: grid;
+          margin-top: 35px;
+        }
+
+        #Top1>div
+        {
+            box-shadow: inset;
+            font-family:  Helvetica, sans-serif;
+        }
+
+        #Top2{
+            width: 50%;
+            grid-template-rows: repeat(1, 30px);
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: 40px;
+            display: grid;
+            margin-left: 20px;
+            
+        }
+
+        #Top3{
+            width: 95%;
+            grid-template-rows: repeat(1, 500px);
+            grid-template-columns: repeat(3, 1fr);
+            display: grid;
+            margin-top: 35px;
+            margin-left: 20px;
+            font-family:  Helvetica, sans-serif;
+        
+        }
+
+        #Top4{
+            width: 1600px;
+            grid-template-rows: repeat(1, 380px);
+            grid-template-columns: repeat(6, 1fr);
+            display: grid;
+            padding-top: 80px;
+            margin: auto;
+            gap: 20px;
+            
+        }
+
+        #Top4>div{
+            border: 1px solid rgb(167, 160, 160);
+            border-radius: 10px;
+        }
+
+        #Top5{
+            width: 1200px;
+            height: 120px;
+            grid-template-columns: repeat(3, 1fr);
+            display: grid;
+            gap: 40px;
+            font-family: Helvetica, sans-serif;
+            
+
+        }
+
+
+        #Topimg1, #Topimg2
+        {
+            height: 430px;
+            padding-left: 30px;
+        }
+        
+        #Topimg3, #Topimg4, #Topimg5{
+            height: 400px;
+            width: 350px;
+        }
+
+        #Topimg4, #Topimg5, #Topimg6, #Topimg7,
+        #Topimg8, #Topimg9{
+            height: 400px;
+            width: 300px
+        }
+        #Topimg10{
+            height: 25px;
+            
+        }
+
+
+
+        #Topbtn1
+        {
+            font-size: 20px;
+            margin-top: 30px;
+            width: 220px;
+            height: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+        }
+        #Topbtn2
+        {
+            height: 35px;
+            width: 100px;
+            border-radius: 8px;
+            color: rgb(255, 45, 45);
+
+        }
+        
+        #Topbtn1:hover, #Topbtn2:hover
+        {
+            cursor: pointer;
+            background-color: gray;
+            border-color: gray;
+           
+       }
+
+       #link1:hover,  #link2:hover,  #link3:hover,
+       #link4:hover,  #link5:hover{
+            cursor: pointer;
+            background-color: gray;
+            border-color: gray;
+       }
+       
+
+        #Select
+        {
+            font-size: 20px;
+
+        }
+        #Select:hover{
+            cursor: pointer;
+        }
+
+
+       /* #Footer Styles */
+
+
+        #bottom-1>h1{
+            margin: auto;
+            width: 55%;
+            font-family:Helvetica, sans-serif;
+            margin-top: 100px;
+            letter-spacing: 0.05em;
+        }
+        #bottom-1>p{
+            margin: auto;
+            width: 55%;
+            font-family: Helvetica, sans-serif;
+            margin-top: 15px;
+        }
+        #bottom-1>div>p,a{
+            color: black;
+        }
+        #bottom-1>div>p,a:hover{
+            color: gray;
+        }
+        #bottom-1-last{
+            display: flex;
+            width: 55%;
+            margin: auto;
+            margin-top: 25px;
+        }
+        #bottom-1-last>div>img{
+            width: 120px;
+        }
+        #bottom-1-last>div:first-child{
+            width: 60%;
+            font-family: Helvetica, sans-serif;
+            margin-right: 50px;
+            border-right: 1px solid rgba(128, 128, 128, 0.234);
+        }
+        #bottom-1-last>div:first-child>p{
+            width: 90%;
+            margin-top: 20px;
+        }
+        #bottom-1-last>div:first-child>p+p
+        {
+            margin-bottom: 20px;
+        }
+        #bottom-1-last>div:last-child>p{
+            margin-bottom: 20px;
+        }
+        #bottom-1-last>div>input{
+            padding: 15px 100px 15px 15px;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        #bottom-1-last>div>button{
+            padding: 13px 17px;
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+        #bottom-1-last>div>button:hover{
+            cursor: pointer;
+            background-color: gray;
+           border-color: gray;
+        }
+        footer{
+            background-color:rgba(0, 0, 0, 0.857);
+            color: white;
+            margin-top: 70px;
+            padding: 10px 50px;
+        }
+        #footer{
+            display: flex;
+        }
+        #footer a{
+            color: white;
+            font-family: Helvetica, sans-serif;
+            text-decoration: none;
+        }
+        #footer p{
+            font-family: Helvetica, sans-serif;
+        }
+        #footer>div:first-child{
+            width: 32%;
+        }
+        #footer>div:nth-child(2){
+            width: 34%;
+            margin-left: 20px;
+        }
+        #footer>div:nth-child(3){
+            width: 16%;
+            margin-left: 20px;
+        }
+        #indialogo{
+            width: 16px;
+        }
+        #followUs{
+            margin-top: 50px;
+        }
+        #footer>div>div>a img{
+            width: 25px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+    
+        .lastp{
+            margin-top: -10px;
+        }
+        ul li{
+            list-style: none;
+           margin-top: 12px;
+           font-family: Arial, Helvetica, sans-serif;
+        }
+       .customer{
+            font-size: 16px;
+        }
+        .about{
+            font-size: 16px;
+        }
+        #app{
+            margin-top: 30px;
+        }
+        #usd{
+            margin-top: 15px;
+            margin-bottom: 50px;
+        }
+        #follow{
+            margin-bottom: 30px;
+        }
+        footer>p{
+            margin-bottom: 15px;
+        }
+        #bottom-2-new
+        {
+            width: 42%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: auto;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .bottomH3
+        {
+            text-align: center;
+            font-weight: lighter;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.708);
+            margin-top: 100px;
+        }
+        .bottomP
+        {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.708);
+            margin-top: 10px;
+        }
+        #bottom-2-new div:first-child p+a
+        {
+            text-decoration: none;
+        }
+
+        /* bottom End */
+
+    </style>
+
+</head>
+<body>
+    <div id="Top1" >
+        <div>
+            <img id="Topimg1" src="https://cdn-images.farfetch-contents.com/18/43/28/99/18432899_39510679_1000.jpg" alt="">
+        </div>
+        <div>
+            <img id="Topimg2" src="https://cdn-images.farfetch-contents.com/18/43/28/99/18432899_39509800_1000.jpg" alt="">
+        </div>
+        <div>
+            <h1><a href="https://www.farfetch.com/in/shopping/kids/young-versace/items.aspx">Versace Kids</a></h1>
+            <p>all-over graphic print sneakers</p>
+            <p>$503 (import duties included)</p>
+           <p style="margin-left: 350px;"> <a href="https://www.farfetch.com/in/shopping/kids/versace-kids-all-over-graphic-print-sneakers-item-18432899.aspx#sizeguide">Size guide</a></p>
+            <select name="Select Size" id="Select">
+                <option value="" selected>Select Size <p>Versace Kids Europe</p></option>
+                <option value="27 EU">27 EU $694</option>
+                <option value="">28 EU </option>
+                <option value="">29 EU $694</option>
+                <option value="">30 EU </option>
+                <option value="">31 EU $694</option>
+                <option value=""><a href="https://www.farfetch.com/in/shopping/kids/versace-kids-all-over-graphic-print-sneakers-item-18432899.aspx">
+                   <u> Size missing? Be notified when its back in </u></a></option>
+            </select>
+            
+            <button id="Topbtn1" >Add To Bag</button>
+            <button id="Topbtn2" >Wishlist  &#10084;</button>
+            <p><b>Estimated Delivery Date</b></p>
+            <p>June 22-30</p>
+
+        </div>
+    </div>
+
+
+    <div id="Top2">
+        <div>
+        <a id="link1" href="https://www.farfetch.com/in/shopping/kids/items.aspx">Kid's Home</a>
+        </a>
+    </div>
+    
+    <div>
+     <a id="link2" href="https://www.farfetch.com/in/shopping/men/items.aspx" target="_blank">Men's Home</a>
+        </a>
+    </div>
+       
+    <div>
+    <a id="link3" href="https://www.farfetch.com/in/shopping/women/items.aspx" target="_blank">Women's Home</a>
+        </a>
+    </div>
+     
+    <div>
+        <a id="link4" href="https://www.farfetch.com/in/shopping/kids/designer-jordan-kids/trainers-3/items.aspx">Boys Trainers</a>
+       </a>
+    </div>
+
+    </div>
+
+<br><br><br>
+
+<a id="link5" href="https://www.farfetch.com/in/shopping/kids/young-versace/items.aspx"><h2> Versace Kids </h2></a>
+<h2 style="margin-left: 20px;"> <u> The Details</u></h2>
+<div id="Top3">
+
+       
+        
+     
+        <div>
+           <p>all-over graphic print sneakers</p>
+           
+            <b style="font-weight: light;">Highlights </b>
+                <li>  multicolour</li>
+                <li>  leather </li>
+                <li>  all-over graphic print  </li>
+                <li>  logo patch at the tongue </li>
+                <li>  front lace-up fastening</li>
+                <li>  round toe</li>
+                <li>  branded insole </li>
+                <li> flat rubber-sole </li>
+               
+                <p>Made In Italy</p>
+       
+   
+           
+        </div>
+        <div>COMPOSITION
+   
+           <ul>Sole: Rubber 100%</ul>
+                <ul>Outer: Leather 100%</ul>
+                <ul>Lining: Nylon 100%</ul>
+                <p>Brand Style Id : DM4228800</p>
+   
+        </div>
+        <div><img id="Topimg3" src="https://cdn-images.farfetch-contents.com/18/43/28/99/18432899_39510680_480.jpg" alt=""></div>
+   
+       </div>
+
+
+       <p style="font-family: Arial, Helvetica, sans-serif;">RECOMMENDATIONS</p>
+       
+
+       <div id="Top4" >
+        <div>  &#10084;<img id="Topimg8" src="https://cdn-images.farfetch-contents.com/16/57/25/79/16572579_32472644_480.jpg" alt="">
+           
+        <b>Jordan Kids</b>
+        <p>Medusa low-top sneakers </p>
+        <p>$626</p>
+        
+        </div>
+        <div>  &#10084;<img id="Topimg9" src="https://cdn-images.farfetch-contents.com/18/22/41/26/18224126_39312981_300.jpg" alt="">
+            <b>Marni Kids</b>
+            <p> floral print low-top sneakers</p>
+            <p>$691</p>
+        </div>
+        <div>  &#10084;<img id="Topimg4" src="https://cdn-images.farfetch-contents.com/18/47/87/52/18478752_39685814_300.jpg" alt="">
+            <b>The Marco Jacobs Kids</b>
+            <p>leopard print low-top sneakers</p>
+            <p>$189</p>
+        
+        </div>
+        
+        
+        <div>  &#10084;<img id="Topimg5" src="https://cdn-images.farfetch-contents.com/17/52/44/96/17524496_37105835_300.jpg" alt="">
+            <b>Micky House</b>
+            <p>embroidered bear sneakers</p>
+            <p>$197</p>
+        
+        </div>
+        <div>  &#10084;<img id="Topimg6" src="https://cdn-images.farfetch-contents.com/18/20/20/17/18202017_38723347_300.jpg" alt="">
+            <b>Palm Angels Kids</b>
+            <p>logo-print low-top Sneakers</p>
+            <p>$352</p>
+        
+        
+        </div>
+        <div>  &#10084;<img id="Topimg7" src="https://cdn-images.farfetch-contents.com/15/17/14/12/15171412_26365844_480.jpg" alt="">
+            <b>LANVIN ENFANT</b>
+            <p>logo - embossed low-top leather sneakers</p>
+            <p>$408</p>
+        
+        
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+     <b>Why FARFETCH</b>
+
+
+    <div id="Top5" >
+        
+        <div>
+            <img id="Topimg10" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuDc4YkdZrfi-gC3cN6bRqmc7tAPhOLpIBOw&usqp=CAU" alt="">
+            <br>
+            <b>The one that you want? We've got it</b>
+        <p>Shop over 100,000 styles</p>
+        <a href="https://www.farfetch.com/in/designers/women">View All</a>
+        
+        </div>
+        <div>
+          <b>4.7/5 stars and 25,000+ reviews</b>
+          <p>You know you can trust us</p>
+          <a href="https://www.farfetch.com/in/reviews">Read Reviews</a>
+
+        </div>
+        <div>
+            <b>Free global returns collection services </b>
+            <p>Change your mind? No problem</p>
+            <a href="https://www.farfetch.com/in/returns-and-refunds/">Read more</a>
+
+        </div>
+    </div>
+
+
+<!-- #FOOTER PAGE -->
+
+    <h3 class="bottomH3">Contact Us</h3>
+    <p class="bottomP">Keep this FARFETCH product ID: <b>17115496</b> at hand</p>
+    <div id="bottom-2-new">
+    <div>
+        <a href="#"><i class="material-icons" style="font-size:36px">mail_outline</i></a>
+        <h3>Email us</h3>
+        <p>Get in touch by email</p>
+        <a href="#">customerservice@farfetch.com</a>
+    </div>
+    <div>
+        <a href="#"><i class="material-icons" style="font-size:36px">call</i></a>
+        <h3>Order by phone</h3>
+        <p>Available Monday to Friday, 08:00 - 21:00 and Saturday to Sunday, 09:00 - 20:00</p>
+        <a href="#">+1 646 791 3768</a>
+    </div>
+    </div>
+    <div id="bottom-1">
+        <h1>DOWNLOAD THE FARFETCH APP</h1>
+        <p>Enjoy exclusive content on our app, including personalized product edits as well as our Visual Search tool for iOS. <a target="_blank" href="https://www.farfetch.com/in/discover-app">More about the app</a></p>
+    </div>
+    <div id="bottom-1-last">
+        <div>
+            <p>EMAIL ME</p>
+            <p>Enter your email and we'll send you a link to download the free app</p>
+            <input type="text" placeholder="Email address">
+            <button>Send</button>
+        </div>
+        <div>
+            <p>SCAN QR CODE</p>
+            <img src="https://media.blackandwhite-ff.com/10000/2a0d5342-2544-4898-b2d4-8272235868d6_qr.png" alt="Error">
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+        <div>
+            <span>FARFETCH APP</span> </br>
+            <p id="app"><a target="_blank" href="https://www.farfetch.com/in/discover-app">Farfetch App for iOS and Android</a></p>
+        </div>
+        <div>
+            <span id="region">DESTINATION/REGION, CURRENCY AND LANGUAGE</span></br>
+            <p id="usd"> <img id="indialogo" src="https://transparency.twitter.com/content/dam/transparency-twitter/flags/in.svg" alt="Error"> India, USD $</p>
+            <p id="follow">FOLLOW US</p>
+            <div>
+                <a target="_blank" href="https://instagram.com/farfetch"><img src="https://www.designbust.com/download/171/png/instagram_logo_color_icon512.png" alt="Error"></a>
+               <a target="_blank" href="https://www.facebook.com/farfetch"><img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-facebook_-512.png" alt="Error"></a>
+               <a target="_blank" href="https://twitter.com/farfetch"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" alt="Error"></a>
+               <a target="_blank" href="https://www.snapchat.com/add/farfetch.com"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGaDjfwg4V8qmJcf7_ep1MEvzcYkZtVZL3_Q&usqp=CAU" alt="Error"></a>
+               <a target="_blank" href="https://www.pinterest.com/farfetch"> <img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Error"></a>
+              <a target="_blank" href="https://www.youtube.com/user/farfetchdotcom"><img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_youtube-512.png" alt="Error"></a>
+               
+            </div>
+        </div>
+        <div>
+            <span class="customer">CUSTOMER SERVICE</span>
+            <ul>
+            <li><a href="https://www.farfetch.com/in/contact-us">Contact us</a></li>
+            <li><a href="https://www.farfetch.com/in/orders-and-shipping">Orders & delivery</a></li>
+            <li><a href="https://www.farfetch.com/in/payment-and-pricing">Payment & pricing</a></li>
+            <li><a href="https://www.farfetch.com/in/returns-and-refunds">Returns & refunds</a></li>
+            <li><a href="https://www.farfetch.com/in/faqs">FAQs</a></li>
+            <li><a href="https://www.farfetch.com/in/terms-and-conditions">Terms & conditions</a></li>
+            <li><a href="https://www.farfetch.com/in/promotion-terms-and-conditions">Promotion terms & conditions</a></li>
+            <li><a href="https://www.farfetch.com/in/privacy-policy">Privacy policy</a></li>
+            <li><a href="https://www.farfetch.com/in/farfetch-accessibility">Accessibility</a></li>
+        </ul>
+        </div>
+        <div>
+           <span id="about">ABOUT FARFETCH</span>
+            <ul>
+            <li><a href="https://aboutfarfetch.com/?_ga=2.217002710.1970144146.1655128298-2129034113.1655128298&_gac=1.86433130.1655130251.Cj0KCQjwwJuVBhCAARIsAOPwGASgBnrLa2sTn9nEzRxAjcnMkAfx6RhgDdBxAxhdQ6g3gaqLb5q0N-AaAp_HEALw_wcB&_gl=1*1mbzeqd*_ga*MjEyOTAzNDExMy4xNjU1MTI4Mjk4*_ga_CEF7PMN9HX*MTY1NTE4MjA0NS40LjEuMTY1NTE5MDM5OS41NQ..">About Us</a></li>
+            <li><a href="https://www.farfetchinvestors.com/">Investors</a></li>
+            <li><a href="https://www.farfetch.com/in/boutiques-all.aspx">Boutique Partners</a></li>
+            <li><a href="https://www.farfetch.com/in/pag1987.aspx">Affiliate Programme</a></li>
+            <li><a href="https://www.farfetch.com/in/student-discount/unidays">Student discount UNiDAYS</a></li>
+            <li><a href="https://www.farfetch.com/in/youth-discount">Youth discount</a></li>
+            <li><a href="https://farfetchgroupcareers.com/farfetch"></a>Careers</li>
+            <li><a href="https://www.farfetch.com/in/customer-promise">Customer Promise</a></li>
+            <li><a href="https://www.farfetch.com/in/discover-app">FARFETCH App</a></li>
+            <li><a href="https://www.farfetch.com/in/sitemap">Sitemap</a></li>
+            <li><a href="https://www.farfetch.com/in/stories/positively-farfetch.aspx">Positively FARFETCH</a></li>
+        </ul>
+    </div>
+    </div>
+    <p>'FARFETCH' and the 'FARFETCH' logo are trade marks of FARFETCH UK Limited and are registered in numerous jurisdictions around the world.</p>
+    <p class="lastp">© Copyright 2022 FARFETCH UK Limited. All rights reserved.</p>
+    </footer>
+ </body>
+ </html>
+ 
+       
+
+   
