@@ -1,0 +1,599 @@
+       /* Navbar Layout Start */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .nav-links > li > a {
+        text-decoration: none;
+        color: black;
+        padding: 0px 30px 0px 0px;
+      }
+      .nav-links li a {
+        text-decoration: none;
+        color: black;
+      }
+      .nav-links li {
+        list-style: none;
+        
+      }
+      .nav-links {
+        display: inline-flex;
+      }
+      .nav-links li a:hover {
+        color: gray;
+      }
+      .nav-links ul li a:hover {
+        color: gray;
+        text-decoration: underline;
+      }
+      .nav-links .drop-sale {
+        top: 65px;
+        line-height: 30px;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+      }
+      .drop-sale li a {
+        width: 100%;
+        display: block;
+      }
+      .nav-links li:hover .box-new,
+      .nav-links li:hover .drop-sale 
+      {
+        opacity: 1;
+        visibility: visible;
+      }
+      .box-new {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+        top: 40px;
+        opacity: 0;
+        visibility: hidden;
+       background-color: white;
+      }
+      .box-new .content {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        padding-top: 0px;
+      }
+      .content .row {
+        width: calc(25% - 30px);
+      }
+      .content .row header {
+        font-size: 16px;
+        margin-top: 15px;
+      }
+      .content .row img {
+        width: 400px;
+        object-fit: cover;
+        margin-left: -100px;
+        margin-top: 10px;
+      }
+      .content .row img + p {
+        margin-left: -100px;
+        font-size: 14px;
+      }
+      .content .row img + p + p {
+        margin-left: -100px;
+        color: rgba(255, 0, 0, 0.813);
+      }
+      .content .row img + p + p + a {
+        margin-left: -100px;
+        text-decoration: underline;
+      }
+
+      .box-links-11 {
+        width: 100%;
+        padding: 0px;
+      }
+      .hKids,
+      .box-links-12 {
+        margin-left: -100px;
+      }
+      .hNur,
+      .box-links-32 {
+        margin-left: -75px;
+      }
+      .hbboys,
+      .box-links-33 {
+        margin-left: -75px;
+      }
+      .box-links-34 {
+        margin-left: -100px;
+      }
+      .hBrand,
+      .hbboys,
+      .hNur,
+      .hBaby,
+      .hKids,
+      .hTeen {
+        margin-top: 50px;
+        margin-bottom: 15px;
+      }
+
+      .hTeen,
+      .box-links-13 {
+        margin-left: -200px;
+      }
+      #searchBtn input
+      {
+        padding: 10px 50px 10px 10px;
+        border-radius: 5px;
+        margin-left: 350px;
+      }
+      #upperTop{
+        width: 100%;
+        background-color: red;
+        padding: 15px 0 15px 0px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      }
+      #upperTop a{
+        color: white;
+        font-weight: lighter;
+        text-decoration: none;
+      }
+      #upperTop a:hover{
+        text-decoration: underline;
+      }
+      #upperNav{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+      }
+      #upperNav a{
+        padding: 0 20px 0 0;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+      }
+      #upperNav>div:nth-child(2) a{
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 280px;
+      }
+      #upperNav>div:nth-child(3){
+        margin-left: 250px;
+      }
+      #upperImg img{
+        width: 25px;
+      }
+      #upperNav>div:first-child a{
+        padding: 15px 20px;
+      }
+      #upperNav>div:last-child a{
+        padding: 25px 15px 10px 15px;
+      }
+      #upperNav>div:first-child a:hover{
+        background-color: rgba(128, 128, 128, 0.334);
+        border-radius: 5px;
+      }
+      #upperNav>div:last-child a:hover{
+        background-color: rgba(128, 128, 128, 0.334);
+        border-radius: 5px;
+      }
+      #upperNav{
+        width: 100%;
+        margin: auto;
+        position: sticky;
+        top: 0px;
+        background-color: white;
+        padding: 20px;
+        padding-left: 30px;
+      }
+      .wrapper{
+        width: 100%;
+        margin: auto;
+        padding: 50px;
+        padding-top: 0px;
+        padding-bottom: 10px;
+        position: sticky;
+        top: 80px;
+        background-color: white;
+      }
+
+      /* Navbar Layout End */
+       
+       /* kids Start */
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        #kidsHome
+        {
+            width: 95%;
+            margin: auto;
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            row-gap: 100px;
+        }
+       
+        #kidsHome>div:nth-child(2) h1
+        {
+            width: 70%;
+            display: block;
+            text-align: center;
+            align-items: center;
+            margin: auto;
+            font-size: 50px;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #kidsHome a,
+        #kidsProduct-1 a,
+        #kidsProduct-2 a,
+        #kidsProduct-3 a,
+        #kidsProduct-4 a
+        {
+            text-decoration: none;
+            color: black;
+        }
+
+        #kidsHome>div:nth-child(2){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #kidsHome>div:nth-child(3){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #kidsHome>div:nth-child(2) p
+        {
+            width: 83%;
+            text-align: center;
+            margin: auto;
+            font-size: 25px;
+            margin-top: 50px;
+        }
+
+        #kidsHome button,
+        #kidsProductBtn
+        {
+           display: block;
+           margin: auto;
+           margin-top: 50px;
+           padding: 15px 25px;
+           border-radius: 5px;
+           background-color: white;
+           font-size: 16px;
+           font-weight: bold;
+           border: 1px solid black;
+        }
+
+        #kidsHome button:hover,
+        #kidsProductBtn:hover
+        {
+            cursor: pointer;
+            color: gray;
+        }
+
+        #kidsHome>div:nth-child(3)>a>p
+        {
+            width: 83%;
+            text-align: center;
+            margin: auto;
+            font-size: 30px;
+            margin-top: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #kidsHome>div:nth-child(3)>a>p+p
+        {
+            width: 83%;
+            text-align: center;
+            margin: auto;
+            font-size: 16px;
+            margin-top: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2
+        {
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+        }
+        #kidsProduct-1
+        {
+            width: 95%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        #kidsProduct-1 img
+        {
+            width: 410px;
+        }
+
+        #kidsProduct-1 h4,
+        #kidsProduct-2 h4,
+        #kidsProduct-4 h4
+        {
+            margin-top: 20px;
+            font-weight: lighter;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #kidsProduct-1 p,
+        #kidsProduct-2 p,
+        #kidsProduct-4 p
+        {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 5px;
+        }
+
+        #kidsProduct-2,
+        #kidsProduct-4
+        {
+            width: 95%;
+            margin: auto;
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        #kidsProduct-2 img,
+        #kidsProduct-4 img
+        {
+            width: 625px;
+        }
+
+        #kidsProduct-3
+        {
+            width: 95%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 55px;
+        }
+        #kidsProduct-3>div:first-child::after
+        {
+            content: "";
+            position: absolute;
+            inset: 0px;
+            background-image: url(https://cdn-images.farfetch-contents.com/17/11/54/96/17115496_34622138_1000.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            opacity: 0;
+            cursor: pointer;
+        }
+        #kidsProduct-3 img
+        {
+            width: 200px;
+            background-color: gray;
+            color: gray;
+        }
+        #kidsProduct-3>div h4
+        {
+            margin-top: 27px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 5px;
+        }
+        #kidsProduct-3>div:nth-child(3)>a>h4
+        {
+            margin-top: 5px;
+        }
+        #kidsProduct-3 p
+        {
+            margin-bottom: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #kidsProduct-3>div:nth-child(2) p
+        {
+            margin-bottom: 30px;
+        }
+        #kidsProduct-3>div:nth-child(3) p
+        {
+            margin-bottom: 34px;
+        }
+        #kidsProduct-3>div:nth-child(3)>a>img+p
+        {
+            font-size: 16px;
+            color: gray;
+            margin: 0;
+        }
+        #kidsProduct-3>div:nth-child(3)>a>img+p+p
+        {
+          margin-bottom: auto;
+        }
+        #divHeart:hover{
+         color: red;
+        }
+
+        /* kids End */
+
+        /* bottom Start */
+        #bottom-2{
+            width: 95%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 70px;
+        }
+
+        #bottom-2>a>div>p:last-child{
+            margin-top: 10px;
+        }
+        #bottom-2>a>div{
+            border: 1px solid rgba(128, 128, 128, 0.065);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #bottom-2>a{
+            text-decoration: none;
+            color: black;
+            font-family: Helvetica, sans-serif;
+        }
+        #bottom-2>a:hover{
+            background-color: rgba(128, 128, 128, 0.065);
+        }
+        #bottom-2>a:first-child>div>img{
+            width: 30px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        #bottom-2>a:nth-child(2)>div>img{
+            width: 30px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        #bottom-2>a:nth-child(3)>div>img{
+            width: 50px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        #bottom-1>h1{
+            margin: auto;
+            width: 55%;
+            font-family:Helvetica, sans-serif;
+            margin-top: 100px;
+            letter-spacing: 0.05em;
+        }
+        #bottom-1>p{
+            margin: auto;
+            width: 55%;
+            font-family: Helvetica, sans-serif;
+            margin-top: 15px;
+        }
+        #bottom-1>div>p,a{
+            color: black;
+        }
+
+        #bottom-1>div>p,a:hover{
+            color: gray;
+        }
+        #bottom-1-last{
+            display: flex;
+            width: 55%;
+            margin: auto;
+            margin-top: 25px;
+        }
+        #bottom-1-last>div>img{
+            width: 120px;
+        }
+        #bottom-1-last>div:first-child{
+            width: 60%;
+            font-family: Helvetica, sans-serif;
+            margin-right: 50px;
+            border-right: 1px solid rgba(128, 128, 128, 0.234);
+        }
+        #bottom-1-last>div:first-child>p{
+            width: 90%;
+            margin-top: 20px;
+        }
+        #bottom-1-last>div:first-child>p+p
+        {
+            margin-bottom: 20px;
+        }
+        #bottom-1-last>div:last-child>p{
+            margin-bottom: 20px;
+        }
+        #bottom-1-last>div>input{
+            padding: 15px 100px 15px 15px;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        #bottom-1-last>div>button{
+            padding: 13px 17px;
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+        }
+        #bottom-1-last>div>button:hover{
+            cursor: pointer;
+            background-color: gray;
+        }
+        footer{
+            background-color:rgba(0, 0, 0, 0.857);
+            color: white;
+            margin-top: 70px;
+            padding: 10px 50px;
+        }
+        #footer{
+            display: flex;
+        }
+        #footer a{
+            color: white;
+            font-family: Helvetica, sans-serif;
+            text-decoration: none;
+        }
+        #footer p{
+            font-family: Helvetica, sans-serif;
+        }
+        #footer>div:first-child{
+            width: 32%;
+        }
+        #footer>div:nth-child(2){
+            width: 34%;
+            margin-left: 20px;
+        }
+        #footer>div:nth-child(3){
+            width: 16%;
+            margin-left: 20px;
+        }
+        #indialogo{
+            width: 16px;
+        }
+        #followUs{
+            margin-top: 50px;
+        }
+        #footer>div>div>a img{
+            width: 25px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+    
+        .lastp{
+            margin-top: -10px;
+        }
+        ul li{
+            list-style: none;
+           margin-top: 12px;
+           font-family: Arial, Helvetica, sans-serif;
+        }
+       .customer{
+            font-size: 16px;
+        }
+        .about{
+            font-size: 16px;
+        }
+        #app{
+            margin-top: 30px;
+        }
+        #usd{
+            margin-top: 15px;
+            margin-bottom: 50px;
+        }
+        #follow{
+            margin-bottom: 30px;
+        }
+        footer>p{
+            margin-bottom: 15px;
+        }
+        /* bottom End */
